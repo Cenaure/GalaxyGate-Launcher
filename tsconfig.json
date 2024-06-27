@@ -21,6 +21,6 @@
     "noFallthroughCasesInSwitch": true,
     
   },
-  "include": ["src", "electron"],
+  "include": ["GalaxyGate-Launcher/src", "GalaxyGate-Launcher/electron"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

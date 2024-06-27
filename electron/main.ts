@@ -7,6 +7,7 @@ const require = createRequire(import.meta.url);
 const { launchMinecraft } = require('../src/modules/minecraftLauncher.cjs');
 const fs = require('fs');
 const { autoUpdater } = require('electron-updater');
+const log = require('electron-log');
 
 //const require = createRequire(import.meta.url)
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
@@ -31,6 +32,10 @@ process.env.VITE_PUBLIC = VITE_DEV_SERVER_URL ? path.join(process.env.APP_ROOT, 
 
 let win: BrowserWindow | null
 let updateWindow: BrowserWindow | null
+
+autoUpdater.logger = log;
+autoUpdater.logger.transports.file.level = 'info';
+log.info('App starting...');
 
 function createUpdateWindow() {
   updateWindow = new BrowserWindow({
