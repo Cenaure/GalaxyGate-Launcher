@@ -1,0 +1,70 @@
+.serverPageContainer{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
+  position: relative;
+  padding: 20px;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  height: 50px;
+  box-sizing: border-box;
+}
+
+.content {
+  flex: 1;
+}
+
+.playBtn {
+  width: 100px;
+  height: 50px;
+}
+
+.progressBar{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.progressBar progress {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  appearance: none; /* Убираем стандартные стили браузера */
+  border-radius: 10px;
+}
+
+.progressBar progress::-webkit-progress-bar {
+  background-color: #0E1116; /* Цвет фона прогресс-бара */
+  border-radius: 10px;
+}
+
+.progressBar progress::-webkit-progress-value {
+  border-radius: 10px;
+  background-color: #CB9CF2; /* Цвет заполнения прогресс-бара */
+}
+
+.progressText {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: white; /* Цвет текста */
+}

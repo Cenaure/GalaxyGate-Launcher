@@ -1,0 +1,25 @@
+.serverCard {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  justify-content: center;
+  width: 100%;
+  gap: 15px;
+  text-decoration: none;
+  color: white;
+  background-color: #14171a;
+  border-radius: 15px;
+}
+
+.serverCard:hover {
+  color: white;
+}
+
+.serverCard div {
+  font-size: 20px;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
