@@ -40,6 +40,13 @@
   },
   "main": "dist-electron/main.js",
   "build": {
-    "appId": "https://github.com/Cenaure/GalaxyGate-Launcher"
+    "appId": "com.cenaure.galaxylauncher",
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "Cenaure",
+        "repo": "GalaxyGate-Launcher"
+      }
+    ]
   }
 }
